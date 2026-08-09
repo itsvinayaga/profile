@@ -17,7 +17,7 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('https://github.com/itsvinayaga/profile/blob/main/assets/bg_layer.png');
+  background-image: url('https://raw.githubusercontent.com/itsvinayaga/profile/refs/heads/main/assets/bg_layer.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
