@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinayaga Moorthi — LIMS Developer</title>
+  <meta name="description" content="Portfolio of Vinayaga Moorthi — LIMS Developer, Lab Process Automation, Web Application Developer based in Mumbai, India.">
+
+  <!-- ── Icons ── -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+
+  <!-- ── Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Thunder:wght@300;400;500;600&family=Arial:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ── Stylesheets ── -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2PM4KP111E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2PM4KP111E');
+</script>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════
+       NAV — Fixed header
+       ════════════════════════════════════════════════════ -->
+  <nav>
+    <div class="nav-logo">VM<span>.</span></div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">Project</a>
+      <a href="#objective">Objective</a>
+    </div>
+
+    <a href="mailto:vinayagamoorthi@email.com" class="nav-cta">Get in touch</a>
+
+    <!-- Hamburger (mobile only) -->
+    <div class="hamburger" id="hamburger" onclick="toggleSidebar()" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mob-overlay" id="mobOverlay"></div>
+
+  <!-- Mobile sidebar -->
+  <div class="mob-sidebar" id="mobSidebar">
+    <div class="mob-sidebar-head">
+      <div class="mob-sidebar-logo">VM<span>.</span></div>
+      <button class="mob-close" onclick="closeSidebar()">
+        <i class="ti ti-x"></i>
+      </button>
+    </div>
+    <div class="mob-sidebar-links">
+      <a href="#home"       onclick="closeSidebar()"><i class="ti ti-home"></i>       Home</a>
+      <a href="#about"      onclick="closeSidebar()"><i class="ti ti-user"></i>       About</a>
+      <a href="#experience" onclick="closeSidebar()"><i class="ti ti-briefcase"></i>  Experience</a>
+      <a href="#skills"     onclick="closeSidebar()"><i class="ti ti-tools"></i>      Skills</a>
+      <a href="#project"    onclick="closeSidebar()"><i class="ti ti-flask"></i>      Project</a>
+      <a href="#objective"  onclick="closeSidebar()"><i class="ti ti-target"></i>     Objective</a>
+    </div>
+    <a href="mailto:vinayagamoorthi@email.com" class="mob-sidebar-cta">Get in touch</a>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════
+       HERO
+       ════════════════════════════════════════════════════ -->
+  <div class="hero" id="home">
+    <!-- Background layers -->
+    <div class="hero-bg-img"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-bg">
+      <div class="hero-dots"></div>
+      <div class="hero-blob b1"></div>
+      <div class="hero-blob b2"></div>
+      <div class="hero-blob b3"></div>
+    </div>
+
+    <div class="hero-inner">
+      <!-- Avatar -->
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring2"></div>
+        <div class="orbit-dot d1"></div>
+        <div class="orbit-dot d2"></div>
+        <div class="orbit-dot d3"></div>
+        <div class="avatar-frame">
+          <img
+            src="/assets/profile.jpg"
+            alt="Vinayaga Moorthi — Profile photo"
+          >
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="hero-text">
+        <div class="hero-eyebrow">Currently Working</div>
+        <h1 class="hero-name">Vinayaga <span class="accent">Moorthi</span></h1>
+        <p class="hero-role">Laboratory Professional &nbsp;·&nbsp; LIMS Support &nbsp;·&nbsp; Digital Workflows</p>
+
+        <div class="typing-wrap">
+          <span class="typing-prefix">→</span>
+          <span id="typed"></span>
+          <span class="cursor"></span>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num" data-target="4">0</div>
+            <div class="stat-lbl">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="50">0</div>
+            <div class="stat-lbl">Users Trained & Supported</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-target="15">0</div>
+            <div class="stat-lbl">LIMS Modules</div>
+          </div>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge"><i class="ti ti-microscope"></i>Laboratory Digitization</div>
+          <div class="badge"><i class="ti ti-arrows-shuffle"></i>Process Improvement</div>
+          <div class="badge"><i class="ti ti-settings-automation"></i>Workflow Automation</div>
+          <div class="badge"><i class="ti ti-brand-wordpress"></i>WordPress &amp; SEO</div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /hero -->
+
+  <hr class="divider">
+
+
+  <!-- ════════════════════════════════════════════════════
+       ABOUT
+       ════════════════════════════════════════════════════ -->
+  <div class="section" id="about">
+    <div class="sec-eyebrow reveal left">About me</div>
+    <div class="sec-title reveal up">Who I <span>am</span></div>
+
+    <div class="about-grid">
+      <div class="about-main reveal up">
+       I am a <b>Laboratory professional</b> with hands-on experience in laboratory testing, quality processes, and <b>Laboratory Information Management Systems (LIMS)</b>. My work involves understanding laboratory operations and helping translate practical requirements into efficient digital workflows.
+       I have experience working with sample management, testing workflows, parameter and specification management, inventory and chemical stock control, reporting, user access, approvals, and laboratory process digitization. I also provide training and ongoing support to users, helping laboratory teams effectively adopt and use LIMS in their day-to-day operations.
+       My laboratory experience helps me understand the challenges faced by analysts and quality teams and contribute effectively to the design and improvement of LIMS solutions. Alongside my laboratory and LIMS experience, I have also worked with <b>WordPress, SEO, and eCommerce solutions,</b> giving me additional exposure to web-based digital platforms and business processes.
+      </div>
+
+      <div class="about-stat reveal left" style="transition-delay: .10s">
+        <div class="big">LIMS</div>
+        <div class="lbl">Implementation & User Support</div>
+      </div>
+
+      <div class="about-stat teal reveal right" style="transition-delay: .15s">
+        <div class="big">NABL</div>
+        <div class="lbl">Workflow &amp; compliance expertise</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+
+  <!-- ════════════════════════════════════════════════════
+       WORK EXPERIENCE TREE
+       ════════════════════════════════════════════════════ -->
+  <div class="section" id="experience">
+    <div class="sec-eyebrow reveal left">Work experience</div>
+    <div class="sec-title reveal up">Career <span>timeline</span></div>
+
+    <div class="tree-wrap">
+      <div class="tree-trunk" id="tree-trunk"></div>
+
+      <!-- ── Card 1 — Current ── -->
+      <div class="tree-item active reveal up" style="transition-delay: .05s">
+        <div class="tree-node"></div>
+        <div class="tree-branch"></div>
+        <div class="tree-card open" onclick="toggleTree(this)">
+          <div class="tree-card-top">
+            <div class="tree-meta">
+              <div class="tree-company">
+                <span class="company-dot"></span>
+                <span class="company-name">Laboratory Professional - LIMS Implementation & Support</span>
+              </div>
+              <div class="tree-role">Analytical Technology Laboratory, Coimbatore</div>
+              <div class="tree-period"><i class="ti ti-calendar"></i> 2023 – Present</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+              <div class="tree-badge current">● Active</div>
+              <i class="ti ti-chevron-up toggle-icon"></i>
+            </div>
+          </div>
+          <div class="tree-desc">
+            <p>Working closely with laboratory operations and LIMS to understand requirements, improve digital workflows, support system implementation, and help laboratory teams adopt efficient technology-driven processes.</p>
+            <ul class="tree-achievements">
+              <li>Contributed to the implementation and continuous improvement of LIMS modules</li>
+              <li>Supported workflows including sample management, testing, inventory, procurement, billing, reporting, and approvals</li>
+              <li>Helped translate manual laboratory processes into structured digital workflows</li>
+              <li>Provided user training, guidance, and ongoing support for effective LIMS adoption</li>
+              <li>Assisted with system testing, requirement identification, workflow validation, and process improvements</li>
+              <li>Supported data accuracy, traceability, and standardized laboratory processes</li>
+              <li>Prepared and supported operational reports and dashboards for laboratory activities</li>
+          
+            </ul>
+            <div class="tree-tags">
+              <span class="tree-tag">LIMS</span>
+              <span class="tree-tag">Laboratory Operations</span>
+              <span class="tree-tag">Process Digitization</span>
+              <span class="tree-tag">NABL Compliance</span>
+              <span class="tree-tag">System Support</span>
+              <span class="tree-tag">User Training</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Card 2 — WordPress ── -->
+      <div class="tree-item reveal up" style="transition-delay: .12s">
+        <div class="tree-node" style="border-color:var(--teal)"></div>
+        <div class="tree-branch" style="background:linear-gradient(90deg,var(--teal),rgba(14,158,117,.15))"></div>
+        <div class="tree-card" onclick="toggleTree(this)">
+          <div class="tree-card-top">
+            <div class="tree-meta">
+              <div class="tree-company">
+                <span class="company-dot" style="background:var(--teal)"></span>
+                <span class="company-name" style="color:var(--teal)">WordPress Developer</span>
+              </div>
+              <div class="tree-role">Freelancer</div>
+              <div class="tree-period"
+                   style="background:var(--teal2);border-color:rgba(14,158,117,.2);color:var(--teal)">
+                <i class="ti ti-calendar"></i> 2021 – Present
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+               <div class="tree-badge current">● Active</div>
+              <i class="ti ti-chevron-down toggle-icon"></i>
+            </div>
+          </div>
+          <div class="tree-desc">
+            <p>Developed and managed Office360s.com — a full-featured WordPress eCommerce platform
+               for office supplies, focused on organic search visibility and conversion.</p>
+            <ul class="tree-achievements">
+              <li>Built and maintained the entire WooCommerce storefront and product catalog</li>
+              <li>Implemented on-page SEO strategies that improved search rankings significantly</li>
+              <li>Managed Google Merchant Center product listings and feed optimization</li>
+              <li>Conducted keyword research and implemented structured data markup</li>
+            </ul>
+            <div class="tree-tags">
+              <span class="tree-tag">WordPress</span>
+              <span class="tree-tag">WooCommerce</span>
+              <span class="tree-tag">SEO</span>
+              <span class="tree-tag">Google Merchant Center</span>
+              <span class="tree-tag">PHP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Card 3 — SEO ── -->
+      <div class="tree-item reveal up" style="transition-delay: .20s">
+        <div class="tree-node" style="border-color:var(--coral)"></div>
+        <div class="tree-branch" style="background:linear-gradient(90deg,var(--coral),rgba(232,93,66,.15))"></div>
+        <div class="tree-card" onclick="toggleTree(this)">
+          <div class="tree-card-top">
+            <div class="tree-meta">
+              <div class="tree-company">
+                <span class="company-dot" style="background:var(--coral)"></span>
+                <span class="company-name" style="color:var(--coral)">QT Lab Technician</span>
+              </div>
+              <div class="tree-role">BKS Textiles Pvt Ltd., Palladam</div>
+              <div class="tree-period"
+                   style="background:#fde8e4;border-color:rgba(232,93,66,.2);color:var(--coral)">
+                <i class="ti ti-calendar"></i> 2020 – 2021
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+              <div class="tree-badge"
+                   style="background:#fde8e4;border-color:rgba(232,93,66,.2);color:var(--coral)">
+                Completed
+              </div>
+              <i class="ti ti-chevron-down toggle-icon"></i>
+            </div>
+          </div>
+          <div class="tree-desc">
+            <p>Working in laboratory testing and quality operations, supporting routine testing, result evaluation, documentation, and day-to-day laboratory activities.</p>
+            <ul class="tree-achievements">
+              <li>Conducting laboratory testing and evaluating test results</li>
+              <li>Maintaining accurate test records, reports, and laboratory documentation</li>
+              <li>Coordinating sample testing and ensuring timely completion of assigned activities</li>
+              <li>Supporting quality teams with reliable and traceable test results</li>
+              <li>Following standard laboratory procedures and testing requirements</li>
+              <li>Identifying abnormal results and communicating observations to the concerned teams</li>
+              <li>Contributing to efficient laboratory workflows and process improvements</li>
+            </ul>
+            <div class="tree-tags">
+              <span class="tree-tag">Laboratory Testing</span>
+              <span class="tree-tag">Sample Handling</span>
+              <span class="tree-tag">Test Reporting</span>
+              <span class="tree-tag">Documentation</span>
+              <span class="tree-tag">Quality Processes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Card 4 — Junior Dev ── -->
+      <div class="tree-item reveal up" style="transition-delay: .28s">
+        <div class="tree-node" style="border-color:var(--amber)"></div>
+        <div class="tree-branch" style="background:linear-gradient(90deg,var(--amber),rgba(200,143,10,.15))"></div>
+        <div class="tree-card" onclick="toggleTree(this)">
+          <div class="tree-card-top">
+            <div class="tree-meta">
+              <div class="tree-company">
+                <span class="company-dot" style="background:var(--amber)"></span>
+                <span class="company-name" style="color:var(--amber)">Quality Inspection & Testing</span>
+              </div>
+              <div class="tree-role">Wheels India Limited, Chennai</div>
+              <div class="tree-period"
+                   style="background:#fef3cd;border-color:rgba(200,143,10,.2);color:var(--amber)">
+                <i class="ti ti-calendar"></i> 2019 – 2021
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+              <div class="tree-badge"
+                   style="background:#fef3cd;border-color:rgba(200,143,10,.2);color:var(--amber)">
+                Completed
+              </div>
+              <i class="ti ti-chevron-down toggle-icon"></i>
+            </div>
+          </div>
+          <div class="tree-desc">
+            <p>Worked in quality inspection and testing activities, ensuring materials and components met specified quality requirements.</p>
+            <ul class="tree-achievements">
+              <li>Performed quality checks and inspection of components</li>
+              <li>Checked materials against specified dimensions, specifications, and quality requirements</li>
+              <li>Supported inspection of incoming materials and finished components</li>
+              <li>Recorded inspection results and maintained quality documentation</li>
+              <li>Identified deviations and communicated quality issues to the concerned teams</li>
+              <li>Followed established inspection procedures and quality standards</li>
+              <li>Supported day-to-day quality activities and maintained accurate inspection records</li>
+              </ul>
+            <div class="tree-tags">
+              <span class="tree-tag">Quality Inspection</span>
+              <span class="tree-tag">Component Testing</span>
+              <span class="tree-tag">Documentation</span>
+              <span class="tree-tag">Quality Standards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /tree-wrap -->
+  </div><!-- /experience -->
+
+  <hr class="divider">
+
+
+  <!-- ════════════════════════════════════════════════════
+       SKILLS
+       ════════════════════════════════════════════════════ -->
+  <div class="section" id="skills">
+    <div class="sec-eyebrow reveal left">Expertise</div>
+    <div class="sec-title reveal up">Core <span>skills</span></div>
+
+    <div class="skills-grid">
+      <!-- Development -->
+      <div class="skill-group reveal left">
+        <h3>Laboratory & Compliance</h3>
+        <div class="skill-row">
+          <div class="skill-meta"><span>NABL Requirements & Documentation </span><span class="skill-pct">95%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-purple" style="--tw:95%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>FSSAI Laboratory Requirements </span><span class="skill-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-purple" style="--tw:88%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Laboratory Testing & Operations </span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-purple" style="--tw:85%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>LIMS Implementation & Support </span><span class="skill-pct">98%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-purple" style="--tw:98%"></div></div>
+        </div>
+      </div>
+
+      <!-- Specializations -->
+      <div class="skill-group reveal right">
+        <h3>Laboratory Processes</h3>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Sample Management</span><span class="skill-pct">92%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-teal" style="--tw:92%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Test & Parameter Management</span><span class="skill-pct">78%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-coral" style="--tw:78%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Specification & Product Matrix </span><span class="skill-pct">74%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-amber" style="--tw:74%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Frontend (HTML / CSS / JS)</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-teal" style="--tw:80%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+
+  <!-- ════════════════════════════════════════════════════
+       KEY PROJECT
+       ════════════════════════════════════════════════════ -->
+  <div class="section" id="project">
+    <div class="sec-eyebrow reveal left">Key project</div>
+    <div class="sec-title reveal up">Laboratory Information <span>Management System</span></div>
+
+    <div class="modules-grid">
+      <div class="mod-card reveal up" style="transition-delay:.05s">
+        <div class="mod-icon" style="background:var(--purple3)"><i class="ti ti-test-pipe" style="color:var(--purple)"></i></div>
+        <h4>Sample management</h4>
+        <p>Registration, tracking, status monitoring and test allocation workflows</p>
+      </div>
+      <div class="mod-card reveal up" style="transition-delay:.10s">
+        <div class="mod-icon" style="background:var(--teal2)"><i class="ti ti-building-warehouse" style="color:var(--teal)"></i></div>
+        <h4>Inventory &amp; stock</h4>
+        <p>Chemical inventory, low stock alerts, expiry monitoring, closing valuations</p>
+      </div>
+      <div class="mod-card reveal up" style="transition-delay:.15s">
+        <div class="mod-icon" style="background:#fef3cd"><i class="ti ti-receipt" style="color:var(--amber)"></i></div>
+        <h4>Billing &amp; finance</h4>
+        <p>Invoices, payment tracking, vendor invoice management</p>
+      </div>
+      <div class="mod-card reveal up" style="transition-delay:.20s">
+        <div class="mod-icon" style="background:#fde8e4"><i class="ti ti-truck-delivery" style="color:var(--coral)"></i></div>
+        <h4>Procurement</h4>
+        <p>Purchase orders, inward management, vendor workflows and requisitions</p>
+      </div>
+      <div class="mod-card reveal up" style="transition-delay:.25s">
+        <div class="mod-icon" style="background:var(--purple3)"><i class="ti ti-activity" style="color:var(--purple)"></i></div>
+        <h4>Lab operations</h4>
+        <p>Parameter master, NABL scope mapping, quality control workflows</p>
+      </div>
+      <div class="mod-card reveal up" style="transition-delay:.30s">
+        <div class="mod-icon" style="background:var(--teal2)"><i class="ti ti-chart-bar" style="color:var(--teal)"></i></div>
+        <h4>Reports &amp; analytics</h4>
+        <p>Operational dashboards, MIS reports, financial and stock reports</p>
+      </div>
+    </div>
+
+    <!-- Business impact -->
+    <div style="margin-top:52px">
+      <div class="sec-eyebrow reveal left" style="margin-bottom:8px">Impact</div>
+      <div class="sec-title reveal up" style="font-size:22px;margin-bottom:20px">Business <span>outcomes</span></div>
+      <div class="impact-list">
+        <div class="impact-item reveal up">
+          <div class="impact-icon"><i class="ti ti-file-off"></i></div>
+          <div class="impact-body">
+            <strong>Reduced manual record maintenance</strong>
+            <span>Digitized workflows replacing paper-based lab record systems across all departments</span>
+          </div>
+        </div>
+        <div class="impact-item reveal up" style="transition-delay:.06s">
+          <div class="impact-icon"><i class="ti ti-eye"></i></div>
+          <div class="impact-body">
+            <strong>Improved sample traceability</strong>
+            <span>End-to-end sample lifecycle visibility with full audit trails and status tracking</span>
+          </div>
+        </div>
+        <div class="impact-item reveal up" style="transition-delay:.12s">
+          <div class="impact-icon"><i class="ti ti-box"></i></div>
+          <div class="impact-body">
+            <strong>Enhanced inventory control</strong>
+            <span>Real-time stock monitoring with automated low stock alerts and expiry management</span>
+          </div>
+        </div>
+        <div class="impact-item reveal up" style="transition-delay:.18s">
+          <div class="impact-icon"><i class="ti ti-currency-rupee"></i></div>
+          <div class="impact-body">
+            <strong>Streamlined billing &amp; procurement</strong>
+            <span>Automated invoicing and purchase order workflows reducing processing time</span>
+          </div>
+        </div>
+        <div class="impact-item reveal up" style="transition-delay:.24s">
+          <div class="impact-icon"><i class="ti ti-rocket"></i></div>
+          <div class="impact-body">
+            <strong>Increased operational efficiency</strong>
+            <span>Full automation from sample receipt to report generation across lab operations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+
+  <!-- ════════════════════════════════════════════════════
+       TECH STACK
+       ════════════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="sec-eyebrow reveal left">Technologies</div>
+    <div class="sec-title reveal up">My <span>stack</span></div>
+    <div class="tech-grid">
+  <div class="tech-tile reveal scale" style="transition-delay:.04s"><i class="ti ti-microscope"></i>LIMS</div>
+  <!-- <div class="tech-tile reveal scale" style="transition-delay:.08s"><i class="ti ti-flask"></i>Laboratory</div> -->
+  <div class="tech-tile reveal scale" style="transition-delay:.12s"><i class="ti ti-brand-php"></i>PHP</div>
+  <div class="tech-tile reveal scale" style="transition-delay:.16s"><i class="ti ti-brand-laravel"></i>Laravel</div>
+  <div class="tech-tile reveal scale" style="transition-delay:.20s"><i class="ti ti-database"></i>MySQL</div>
+  <div class="tech-tile reveal scale" style="transition-delay:.24s"><i class="ti ti-brand-javascript"></i>JavaScript</div>
+  <div class="tech-tile reveal scale" style="transition-delay:.28s"><i class="ti ti-brand-html5"></i>HTML5</div>
+  <div class="tech-tile reveal scale" style="transition-delay:.32s"><i class="ti ti-brand-css3"></i>CSS3</div>
+  <div class="tech-tile reveal scale" style="transition-delay:.36s"><i class="ti ti-layout-grid"></i>Bootstrap</div>
+  <div class="tech-tile reveal scale" style="transition-delay:.40s"><i class="ti ti-brand-wordpress"></i>WordPress</div>
+  <div class="tech-tile reveal scale" style="transition-delay:.44s"><i class="ti ti-shopping-cart"></i>WooCommerce</div>
+</div>
+  </div>
+
+  <hr class="divider">
+
+
+  <!-- ════════════════════════════════════════════════════
+       OTHER PROJECTS
+       ════════════════════════════════════════════════════ -->
+  <div class="section">
+    <div class="sec-eyebrow reveal left">Other work</div>
+    <div class="sec-title reveal up">More <span>projects</span></div>
+    <div class="projects-row">
+      <div class="proj-card reveal left">
+        <div class="proj-tag">eCommerce</div>
+        <h3>Office360s.com</h3>
+        <ul class="proj-list">
+          <li>Built and managed WordPress eCommerce platform</li>
+          <li>Implemented SEO strategies improving search visibility</li>
+          <li>Google Merchant Center product feed management</li>
+          <li>WooCommerce catalog and order management</li>
+        </ul>
+      </div>
+      <div class="proj-card reveal right">
+        <div class="proj-tag">Digital marketing</div>
+        <h3>SEO &amp; optimization</h3>
+        <ul class="proj-list">
+          <li>Website optimization for search ranking improvements</li>
+          <li>Keyword research and on-page SEO implementation</li>
+          <li>Technical SEO audits and performance improvements</li>
+          <li>Monthly reporting and analytics dashboards</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+  <hr class="divider">
+
+
+  <!-- ════════════════════════════════════════════════════
+       RECOMMENDATIONS — LinkedIn
+       ════════════════════════════════════════════════════ -->
+  <div class="section" id="recommendations">
+    <div class="sec-eyebrow reveal left">LinkedIn</div>
+    <div class="sec-title reveal up">Recommendations <span>received</span></div>
+
+    <div class="rec-grid">
+      <div class="rec-card reveal up" style="transition-delay:.05s">
+        <i class="ti ti-quote rec-quote-icon"></i>
+        <p class="rec-text">Dedicated, thinking out of the box, and able to handle the section single-handedly.
+Apart from being technical, he is a Web designer and creator of LIMS software for the laboratory
+
+</p>
+        <div class="rec-person">
+          <div class="rec-avatar">SM</div>
+          <div class="rec-info">
+            <strong>Shanmugam Muthan</strong>
+            <span>Quality Assurance · Analytical Technology Laboratory</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="rec-card reveal up" style="transition-delay:.10s">
+        <i class="ti ti-quote rec-quote-icon"></i>
+        <p class="rec-text">Replace this with the second recommendation text copied from LinkedIn.</p>
+        <div class="rec-person">
+          <div class="rec-avatar">PN</div>
+          <div class="rec-info">
+            <strong>Person Name</strong>
+            <span>Their title · Company</span>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="rec-card reveal up" style="transition-delay:.15s">
+        <i class="ti ti-quote rec-quote-icon"></i>
+        <p class="rec-text">I am currently working with Vinayagamoorthi, who is part of the Technical Support – LIMS function. In his role, he supports LIMS-related activities, including troubleshooting, system coordination, and assisting laboratory teams in day-to-day operations.</p>
+
+<p class="rec-text">He has been actively involved in the development and improvement of LIMS functionalities, contributing to system efficiency and better workflow management. He is sincere in his work, detail-oriented, and responsive to technical requirements.</p>
+
+<p class="rec-text">He works well with team members and contributes to maintaining smooth laboratory processes. He continues to be a dependable member of the team, and I wish him the best in his professional development.</p>
+
+
+</p>
+        <div class="rec-person">
+          <div class="rec-avatar">GS</div>
+          <div class="rec-info">
+            <strong>
+Dr. Gourishankar Manikrao
+</strong>
+            <span>Laboratory Head· Analytical Technology Laboratory</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://www.linkedin.com/in/its-vinayaga/" class="rec-linkedin-cta" target="_blank" rel="noopener">
+      <i class="ti ti-brand-linkedin"></i> View all recommendations on LinkedIn
+    </a>
+  </div>
+
+  <hr class="divider">
+
+
+  <!-- ════════════════════════════════════════════════════
+       OBJECTIVE
+       ════════════════════════════════════════════════════ -->
+  <div class="section" id="objective">
+    <div class="sec-eyebrow reveal left">Professional objective</div>
+    <div class="sec-title reveal up">Where I'm <span>headed</span></div>
+    <div class="objective-card reveal up">
+      <div class="obj-icon"><i class="ti ti-target"></i></div>
+      <div class="obj-text">
+        To contribute to the <b>digital transformation of laboratories</b> by developing
+        scalable, reliable, and user-friendly Laboratory Information Management Systems
+        that improve <b>efficiency, compliance, traceability</b>, and decision-making
+        across laboratory operations.
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      <span class="f-name">Vinayaga Moorthi</span>
+      &nbsp;·&nbsp; Coimbatore, Tamilnadu, India | <a href="mailto:itsvinayagas@gmail.com">itsvinayagas@gmail.com</a> | <a href="tel:+916380315853">+91 6380 315853</a>
+    </p>
+  </footer>
+
+  <!-- ── JavaScript ── -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

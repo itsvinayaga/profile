@@ -1,0 +1,65 @@
+/* ============================================================
+   variables.css — Design tokens & base reset
+   ============================================================ */
+
+/* ── CSS Variables ── */
+:root {
+  /* Backgrounds */
+  --bg:       #f5f6fa;
+  --bg2:      #eef0f8;
+  --bg3:      #ffffff;
+  --card:     #ffffff;
+  --card2:    #f0f1fa;
+
+  /* Borders */
+  --border:   rgba(100, 100, 160, 0.10);
+  --border2:  rgba(100, 100, 160, 0.18);
+
+  /* Brand colours */
+  --purple:   #5548d9;
+  --purple2:  #7c6ff7;
+  --purple3:  #ede9ff;
+  --teal:     #0e9e75;
+  --teal2:    #d1f5ea;
+  --coral:    #e85d42;
+  --amber:    #c88f0a;
+
+  /* Text */
+  --text:     #1a1b2e;
+  --text2:    #4e4f6a;
+  --text3:    #9394b0;
+
+  /* Spacing / radius */
+  --radius:    14px;
+  --radius-sm:  8px;
+
+  /* Shadows */
+  --shadow:    0 2px 16px rgba(85, 72, 217, 0.07);
+  --shadow-md: 0 6px 30px rgba(85, 72, 217, 0.12);
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding-top: 58px; /* fixed nav offset */
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--purple2); border-radius: 4px; }
